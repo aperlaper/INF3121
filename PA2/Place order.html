@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.avactis.com/" />
+<title>Place order</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Place order</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/4.7.9/checkout.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=a.product_name</td>
+	<td>Pure cotton T-Shirt</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.product_quantity_selector</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.product_total_price &gt; span.value</td>
+	<td>$41.97</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//a[contains(text(),'Ice Age 3 - Dawn of the Dinosaurs')])[2]</td>
+	<td>Ice Age 3 - Dawn of the Dinosaurs</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='checkout_3']/div[7]/table/tbody/tr[3]/td[2]</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='checkout_3']/div[7]/table/tbody/tr[3]/td[4]/span</td>
+	<td>$95.96</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.price</td>
+	<td>$137.93</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='checkout_3']/div[7]/div/ul/li[2]/strong</td>
+	<td>$4.14</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='checkout_3']/div[7]/div/ul/li[3]/strong</td>
+	<td>$142.07</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Place Order']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.caption</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.caption</td>
+	<td>Key order details</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[4]/div/div/div/div/div/div/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-lg-6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Pure cotton T-Shirt</td>
+	<td>Pure cotton T-Shirt</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.product_quantity_selector</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.product_total_price &gt; span.value</td>
+	<td>$41.97</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Ice Age 3 - Dawn of the Dinosaurs</td>
+	<td>Ice Age 3 - Dawn of the Dinosaurs</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[3]/td[2]</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[3]/td[4]/span</td>
+	<td>$95.96</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.price</td>
+	<td>$137.93</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li[2]/strong</td>
+	<td>$4.14</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li[3]/strong</td>
+	<td>$142.07</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=0 items</td>
+	<td>0 items</td>
+</tr>
+</tbody></table>
+</body>
+</html>

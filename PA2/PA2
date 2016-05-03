@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="Create account.html">Create account</a></td></tr>
+<tr><td><a href="Log out.html">Log out</a></td></tr>
+<tr><td><a href="Log in.html">Log in</a></td></tr>
+<tr><td><a href="Reset password.html">Reset password</a></td></tr>
+<tr><td><a href="Add an item to cart.html">Add an item to cart</a></td></tr>
+<tr><td><a href="Continue shopping.html">Continue shopping</a></td></tr>
+<tr><td><a href="Increase quantity.html">Increase quantity</a></td></tr>
+<tr><td><a href="Decrease quantity.html">Decrease quantity</a></td></tr>
+<tr><td><a href="Checkout.html">Checkout</a></td></tr>
+<tr><td><a href="Place order.html">Place order</a></td></tr>
+</tbody></table>
+</body>
+</html>

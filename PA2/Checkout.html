@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.avactis.com/" />
+<title>Checkout</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Checkout</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/4.7.9/index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My cart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.goods-page-total &gt; strong</td>
+	<td>$41.97</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='Product_Quan']/table/tbody/tr[3]/td[5]/strong</td>
+	<td>$95.96</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=strong.shopping-total-price.price</td>
+	<td>$137.93</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.header_wel</td>
+	<td>Welcome,</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.form-group &gt; a.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=billingInfo[Firstname]</td>
+	<td>Truls</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=billingInfo[Lastname]</td>
+	<td>Larsen</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=billingInfo[Email]</td>
+	<td>testmail@mail.com</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=billing-info-input_country_select</td>
+	<td>223</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=billingInfo[Postcode]</td>
+	<td>1337</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=billing-info-input_state_menu_select</td>
+	<td>373</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=billingInfo[City]</td>
+	<td>York</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>name=billingInfo[Phone]</td>
+	<td>98402758</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.checkout_buttons &gt; input.btn.btn-primary.button_continue_checkout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.checkout_2.elements['shippingModuleAndMethod[method_code]'][1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyChecked</td>
+	<td>document.checkout_2.elements['shippingModuleAndMethod[method_code]'][1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='checkout_2']/div[5]/div/div[3]/div/div[2]/div[2]</td>
+	<td>$4.14</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@value='Continue Checkout'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>css=div.checkout_buttons &gt; input.btn.btn-primary.button_place_order.input_submit</td>
+	<td>Place Order</td>
+</tr>
+</tbody></table>
+</body>
+</html>

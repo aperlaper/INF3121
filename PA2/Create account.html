@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.avactis.com/" />
+<title>Create account</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Create account</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/4.7.9/index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sign In</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Email]</td>
+	<td>testmail@mail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Password]</td>
+	<td>testing123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][RePassword]</td>
+	<td>testing123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][FirstName]</td>
+	<td>Truls</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][LastName]</td>
+	<td>Larsen</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][ZipCode]</td>
+	<td>1337</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][City]</td>
+	<td>York</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Streetline1]</td>
+	<td>Yorksroad 7</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Phone]</td>
+	<td>98402758</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Register']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.note.note-success</td>
+	<td>Account created successfully. You are now registered.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
